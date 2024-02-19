@@ -1,0 +1,14 @@
+[Unit]
+Description=consumer-service
+[Service]
+User=root
+WorkingDirectory=/home/
+ExecStart=/bin/bash /home/app/consumer-start.sh
+
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
