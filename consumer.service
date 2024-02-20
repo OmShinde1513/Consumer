@@ -2,7 +2,7 @@
 Description=consumer-service
 [Service]
 User=root
-WorkingDirectory=/home/
+WorkingDirectory=/home/app
 ExecStart=/bin/bash /home/app/consumer-start.sh
 
 SuccessExitStatus=143
